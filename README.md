@@ -54,7 +54,7 @@ sudo vi /etc/shells
 chsh -s `which zsh` 
 ```
 
-터미널을 완전히 종료 후 재시작해서 다시 `echo $SHELL`을 입력하면 `zsh` 로 바뀐 것을 확인할 수 있을 것입니다.
+터미널을 완전히 종료 후 재시작해서 `echo $SHELL`을 입력하면 `zsh` 로 바뀐 것을 확인할 수 있을 것입니다.
 
 ###oh-my-zsh 설치
 사실 `zsh`를 사용하는 가장 큰 이유는 이 `oh-my-zsh`라고 해도 과언이 아닙니다.(수많은 플러그인과 테마를 지원하기 때문..)아래 명령어를 터미널에 입력해서 설치합니다.
@@ -70,7 +70,7 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 vi ~/.zshrc
 ```
 
-위의 명령어를 입력하면 중간에`ZSH_THEME="~~~"` 부분이 보일겁니다. 이 부분을 `ZSH_THEME="agnoster"`로 바꾸시고 esc를 누르고 `:wq`를 입력해 저장하시면 됩니다. 만약 `ZSH_THEME`로 시작하는 부분이 없다면 그냥 `ZSH_THEME="agnoster"`를 적당한 곳에 붙여 넣으시면 됩니다.
+위의 명령어를 입력하면 중간에`ZSH_THEME="~~~"` 부분이 보일겁니다. 이 부분을 `ZSH_THEME="agnoster"`로 바꾸시고 esc를 누르고 `:wq`를 입력해 저장하시면 됩니다. 
 
 저장을 하고 나오면 테마가 바로 바뀌는 경우도 있지만 안바뀌는 경우도 있습니다. 안바뀌었을 때는 터미널을 완전히 종료 후 재시작 하시면 됩니다.
 
@@ -96,7 +96,11 @@ vi ~/.zshrc
 우선 아래 명령어를 순차적으로 터미널에 입력해주세요.
 
 ```
-cd ~/.vim/bundle/
+cd
+mkdir .vim
+cd .vim
+mkdir bundle
+cd bundle
 ```
 ```
 git clone https://github.com/altercation/vim-colors-solarized.git
@@ -145,9 +149,9 @@ vi agnoster.zsh-theme
 
 여시고 중간 부분에 `prompt_context()`라고 되어 있는 부분을 찾아 아래처럼 변경한 뒤 저장하면 됩니다. 
 
-```
-prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-```
+
+`$USER@m` -> `$USER`
+
 
 그 후 `.zshrc` 파일 새로고침을 하면 적용이 됩니다.
 
@@ -184,6 +188,7 @@ python del powerline_setup
 ```
 source ~/.vimrc
 ```
+에러가 나오긴 하지만 일단 무시해주세요.
 
 ###zsh-syntax-highlighting 설치
 zsh에서 명령어를 입력할 때도 단어별로 알록달록 한 눈에 알아보기 쉽게 나타내고 싶다면 `syntax-highlighting`을 설치해주시면 됩니다.
