@@ -84,7 +84,7 @@ vi ~/.zshrc
 
 그 후, 터미널로 돌아와서 
 
-1. `cmd + ,` -> `Profiles` -> `Colors` -> `Color Presets` -> `Import` -> `다운 받은 폴더 중 iterm2-colors-solarized/Solarized Dark.itermcolors 를 선택` 
+1. `cmd + ,` -> `Profiles` -> `Colors` -> `Color Presets` -> `Import` -> `다운 받은 폴더 중 iterm2-colors-solarized/Solarized Dark.itermcolors 를 선택` -> `import된 Solarized Dark를 선택`
 
 2. `cmd + ,` -> `Profiles` -> `Text` -> `Change Font` -> `All Fonts` -> `Meslo LG M DZ...for Powerline 을 선택` 
 
