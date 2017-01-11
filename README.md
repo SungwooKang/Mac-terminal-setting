@@ -111,8 +111,6 @@ vi ~/.vimrc
 그 후 아래 문구를 복사 및 붙여 넣고 저장
 
 ```
-vim ~/.vimrc
- 
 set rtp+=~/.vim/bundle/vim-colors-solarized/
  
 syntax enable
