@@ -78,15 +78,15 @@ vi ~/.zshrc
 
 [테마 다운받기](http://ethanschoonover.com/solarized/files/solarized.zip)
 
-[폰트 다운받기](https://github.com/powerline/fonts/blob/master/Meslo/Meslo%20LG%20M%20DZ%20Regular%20for%20Powerline.otf)
+[폰트 다운받기](https://github.com/powerline/fonts/blob/master/Meslo%20Dotted/Meslo%20LG%20M%20DZ%20Regular%20for%20Powerline.ttf)
 
 테마는 받으신 후 적당한 곳에 압축을 풀면 되고, 폰트는 실행해 설치를 하면 됩니다.
 
 그 후, 터미널로 돌아와서 
 
-1. `cmd + ,` -> `Profiles` -> `Colors` -> `Color Presets` -> `Import` -> `다운 받은 폴더 중 iterm2-colors-solarized/Solarized Dark.itermcolors 를 선택` -> `import된 Solarized Dark를 선택`
+1. `cmd` + `,` -> `Profiles` -> `Colors` -> `Color Presets` -> `Import` -> `다운 받은 폴더 중 iterm2-colors-solarized/Solarized Dark.itermcolors 를 선택` -> `import된 Solarized Dark를 선택`
 
-2. `cmd + ,` -> `Profiles` -> `Text` -> `Change Font` -> `All Fonts` -> `Meslo LG M DZ...for Powerline 을 선택` 
+2. `cmd` + `,` -> `Profiles` -> `Text` -> `Change Font` -> `All Fonts` -> `Meslo LG M DZ...for Powerline 을 선택` 
 
 그러면 깔끔해진 터미널 화면을 볼 수 있을 것입니다.
 
@@ -133,7 +133,7 @@ ret 4
 source ~/.vimrc
 ```
 
-그럼 vi 로 파일을 편집할 때 알록달록 화면을 볼 수 있습니다.
+그럼 vi 로 파일을 편집할 때 알록달록 화면을 볼 수 있습니다.(새로고침 과정에서 오류가 발생해도 일단 무시해줍니다.)
 
 ### @뒤에 문구 삭제
 테마를 설치 후 어느정도 깔끔해졌지만, 눈에 거슬리는 것이 보일 겁니다. 바로 `사용자명@Macbook-pro~~` 이런식으로 시작하는 부분입니다. 물론 눈에 안 거슬릴수도 있는 부분이지만 저처럼 거슬리시는 분들은 없애봅시다.
